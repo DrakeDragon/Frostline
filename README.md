@@ -34,6 +34,8 @@ There are three game modes, all sharing the same riders, boards, trick engine an
 
 ![Hub](docs/screenshots/hub.png)
 
+![How to play](docs/screenshots/how-to-play.png)
+
 ## Screenshots
 
 | Big Air | Half-Pipe | Downhill |
@@ -91,16 +93,18 @@ Distance past the lip earns a bonus, and landing jumps cleanly in a row builds a
 Moonlight Run · Alpine Sunrise · Aurora Glacier · Volcano Cup · Neon Downtown · Thunder Ridge · Blossom Pass · Orbital Pipe. Each has its own sky, effects (aurora, embers, city lights, storm, sakura, cosmos) and medal targets. Pop perfectly to build momentum (up to 6), fill the Uber meter, and chain tricks into combos before time runs out. There are also daily challenges and a training mode.
 
 ### Downhill — 8 courses, 5 AI rivals
+Course lengths range from quick 30-second sprints to a 95-second epic.
+
 | Lvl | Course | Twist |
 |---|---|---|
-| 1 | Bunny Run | Friendly first descent |
-| 3 | Pine Rush | Rocks, logs and moguls |
-| 6 | Powder Chute | Steep drops, big kickers |
-| 9 | Glacier Express | Slick ice, huge speed |
-| 12 | Avalanche Alley | A wall of snow chases you — get caught and the race is over |
-| 15 | Neon Dash | 9 jumps, boost pads, trick points ×1.3 |
-| 18 | Thunder Gorge | Headwind and a field of rocks |
-| 22 | Summit to Sea | The longest run, every hazard |
+| 1 | Bunny Run | Short and friendly first descent (~30 s) |
+| 3 | Pine Rush | Rocks, logs and moguls (~55 s) |
+| 6 | Powder Chute | Short, steep drops and big kickers (~30 s) |
+| 9 | Glacier Express | Long slick ice run, huge speed (~70 s) |
+| 12 | Avalanche Alley | Long run, a wall of snow chases you — get caught and the race is over (~65 s) |
+| 15 | Neon Dash | Short sprint, 8 jumps, boost pads, trick points ×1.3 (~40 s) |
+| 18 | Thunder Gorge | Long headwind run through a field of rocks (~70 s) |
+| 22 | Summit to Sea | The epic: longest run, every hazard (~95 s) |
 
 - **Tuck** to go faster, but let go in **moguls** to absorb the bumps.
 - **Hop** (release on open snow) to clear rocks and logs. Hitting one costs most of your speed.
@@ -120,6 +124,7 @@ Moonlight Run · Alpine Sunrise · Aurora Glacier · Volcano Cup · Neon Downtow
 - **Medals** (bronze / silver / gold / platinum) on every venue and course, plus per-run **goals** that award coins and XP.
 - **27 achievements**, a profile page with lifetime stats, and a shareable score card.
 - **Garage** with animated rider and board previews.
+- **How to Play** screen for every mode (also shown automatically the first time you start each mode, and from the Pause menu).
 
 ## Tech & design
 - Single-file HTML5 canvas game: no frameworks, no assets, no build step needed to play. All art is drawn in code and all audio is synthesised with Web Audio.

@@ -157,6 +157,47 @@ h3{margin:16px 0 8px;font:900 13px system-ui;letter-spacing:.2em;color:#cfeaff;t
 .big.sm2{padding:9px 24px;font-size:16px}
 @media (max-height:520px){.mcols{display:flex;gap:18px;align-items:center}.mcols>div{flex:1;min-width:0}.mcols .list{font-size:12px}.mcols .btn{padding:8px 12px;font-size:12px}}
 @media (max-height:460px){.card{padding:10px 14px}.big{padding:10px 26px;font-size:17px}.sub{margin-bottom:6px}.score{font-size:34px}}
+
+/* ---- uniform hub cards ---- */
+.hub .modes{display:flex;gap:12px;width:100%;max-width:920px;align-self:center;flex:1;min-height:0;max-height:270px;margin:auto 0}
+.hub .mode{position:relative;overflow:hidden;flex:1 1 0;min-width:0;max-width:none;padding:0;border-radius:18px;border:2px solid rgba(25,230,255,.55);background:#0a1038;display:block;box-shadow:0 0 24px rgba(25,230,255,.22)}
+.hub .mode.m-air{border-color:var(--mg);box-shadow:0 0 26px rgba(255,47,185,.3)}
+.hub .mode.m-dh{border-color:var(--gold);box-shadow:0 0 26px rgba(255,210,63,.26)}
+.hub .mbg{position:absolute;inset:0;width:100%;height:100%;display:block}.hub .mode .mv{display:block!important}
+.hub .mshade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,8,24,.12),rgba(5,8,24,.5) 42%,rgba(5,8,24,.9))}
+.hub .mi{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:10px 10px 10px;gap:4px;text-align:center}
+.hub .mt{font:900 clamp(19px,4.6vmin,26px) system-ui;letter-spacing:.12em;font-style:italic;line-height:1.1;color:#fff}
+.hub .m-air .mt{background:linear-gradient(90deg,var(--cy),var(--mg));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hub .m-dh .mt{background:linear-gradient(90deg,#ffd23f,#ff7a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hub .mv{font:700 13px system-ui;color:#cfeaf7;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.hub .mhead{min-width:0;max-width:100%}
+.hub .tagrow{display:flex;gap:5px;justify-content:center;flex-wrap:nowrap;min-height:18px}
+.hub .tagrow i{font:900 9px system-ui;font-style:normal;letter-spacing:.1em;border:1.5px solid rgba(255,210,63,.8);color:#ffd23f;border-radius:999px;padding:2px 7px;white-space:nowrap}
+.hub .meta{font:700 11px system-ui;letter-spacing:.06em;color:#9fb4d8;white-space:nowrap}
+.hub .mode .big{width:100%;margin:0;padding:10px 6px;font-size:17px;letter-spacing:.12em}
+.hub .row2{display:flex;gap:6px;width:100%}
+.hub .row2 .btn{flex:1;margin:0;padding:7px 4px;font-size:11px;letter-spacing:.08em;min-width:0}
+.hub .nav{flex-wrap:nowrap}
+.hub .nav{gap:6px}.hub .nav .btn{padding:9px 11px;font-size:12px;white-space:nowrap}
+@media (max-height:420px){.hub .mv{font-size:12px}.hub .mode .big{padding:8px 6px;font-size:15px}.hub .modes{max-height:230px}.hub .meta{font-size:10px}}
+@media (max-width:700px){.hub .nav .btn{padding:8px 9px;font-size:11px}.hub .modes{gap:8px}.hub .tagrow i{font-size:8px;padding:2px 5px}.hub .mode .big{font-size:14px;letter-spacing:.06em}}
+@media (max-aspect-ratio:1/1){.hub .modes{flex-direction:column;max-height:none;gap:8px}.hub .mode{flex:1 1 0;min-height:130px}.hub .nav{flex-wrap:wrap}.hub .mi{flex-direction:row;flex-wrap:wrap;justify-content:center;align-content:center;gap:6px 10px}.hub .mhead{flex:1 1 100%}.hub .tagrow{flex:1 1 100%}.hub .meta{flex:1 1 100%}.hub .mode .big{flex:1 1 40%;width:auto}.hub .row2{flex:1 1 55%;width:auto}}
+/* ---- how to play ---- */
+.how{display:flex;gap:16px;align-items:stretch;max-width:880px;margin:0 auto}
+.hphone{flex:0 0 46%;position:relative;min-height:170px;border:2px solid rgba(25,230,255,.5);border-radius:18px;background:linear-gradient(160deg,rgba(14,22,66,.9),rgba(40,12,70,.9));display:flex;overflow:hidden}
+.hz{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px;text-align:center}
+.hz span{font:600 11px system-ui;color:#9fd8ee}
+.hl{background:rgba(25,230,255,.1);border-right:2px dashed rgba(25,230,255,.4)}
+.hl b{font:900 22px system-ui;letter-spacing:.1em;color:var(--cy);border:2px solid var(--cy);border-radius:50%;width:76px;height:76px;display:flex;align-items:center;justify-content:center;font-size:15px}
+.hr{flex:0 0 40%}
+.hgb{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.hgb i{font:800 9px system-ui;font-style:normal;border:2px solid var(--cy);border-radius:50%;width:38px;height:38px;display:flex;align-items:center;justify-content:center}
+.hub2{font:900 10px system-ui;border:2px solid var(--mg);color:var(--mg);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center}
+.hsteps{flex:1;margin:0;padding:0 0 0 22px;font:600 14px/1.35 system-ui;display:flex;flex-direction:column;gap:8px;justify-content:center}
+.hsteps li::marker{color:var(--gold);font-weight:900}.hsteps b{color:var(--cy)}
+.hkeys{max-width:880px;margin:12px auto 0;font:600 12px system-ui;color:#9fd8ee;text-align:center;line-height:1.5}.hkeys b{color:#fff;letter-spacing:.1em}
+@media (max-aspect-ratio:1/1),(max-width:620px){.how{flex-direction:column}.hphone{flex:none;min-height:150px}}
+@media (max-height:420px){.hsteps{font-size:12.5px;gap:5px}.hphone{min-height:140px}.hl b{width:62px;height:62px}}
 </style>
 </head>
 <body>
@@ -346,7 +387,7 @@ let SAVE=null;
 function defaultSave(){
   return {v:2,xp:0,coins:0,sel:{rider:0,board:0,venue:0,air:0,dh:0},boardsU:[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],best:[0,0,0,0,0,0,0,0],medals:[0,0,0,0,0,0,0,0],bestAir:[0,0,0,0,0,0,0,0,0,0,0,0],medalsAir:[0,0,0,0,0,0,0,0,0,0,0,0],bestDh:[0,0,0,0,0,0,0,0],medalsDh:[0,0,0,0,0,0,0,0],codex:{},ach:{},
     tot:{runs:0,gems:0,gold:0,perfects:0,tricks:0,ubers:0,bails:0,maxAlt:0,bestChain:0,maxSpin:0,maxFlips:0,maxComps:0,bestScore:0,cleanRuns:0,maxMom:0,maxDist:0,airRuns:0,dhRuns:0,dhWins:0,dhPodiums:0},
-    settings:{music:0.6,sfx:0.8,haptics:true,shake:true,lefty:false,sens:1},tutDone:false,daily:{last:-1,best:0,streak:0,doneDay:-1}};
+    settings:{music:0.6,sfx:0.8,haptics:true,shake:true,lefty:false,sens:1},tutDone:false,seen:{},daily:{last:-1,best:0,streak:0,doneDay:-1}};
 }
 function loadSave(){
   const d=defaultSave();
@@ -784,7 +825,7 @@ function endRun(title){
   bank();
   S.time=Math.max(0,S.time);
   S.mode='over';
-  const air=S.kind==='air', dh=S.kind==='dh', V=air?AIRS[S.ai]:dh?DHS[S.di]:VENUES[curVenue], vi=air?S.ai:dh?S.di:curVenue, bestA=air?SAVE.bestAir:dh?SAVE.bestDh:SAVE.best, medA=air?SAVE.medalsAir:dh?SAVE.medalsDh:SAVE.medals, sc=Math.round(S.score), st=S.st, MEDS=dh?DH_MEDALS:V.medals;
+  const air=S.kind==='air', dh=S.kind==='dh', V=air?AIRS[S.ai]:dh?DHS[S.di]:VENUES[curVenue], vi=air?S.ai:dh?S.di:curVenue, bestA=air?SAVE.bestAir:dh?SAVE.bestDh:SAVE.best, medA=air?SAVE.medalsAir:dh?SAVE.medalsDh:SAVE.medals, sc=Math.round(S.score), st=S.st, MEDS=dh?[DH_MEDALS[0],DH_MEDALS[1],DH_MEDALS[2],V.plat||DH_MEDALS[3]]:V.medals;
   let medal=0; for(let i=0;i<4;i++) if(sc>=MEDS[i]) medal=i+1;
   if(dh&&S.dnf) medal=0;
   const prevLv=curLevel();
@@ -1746,14 +1787,14 @@ function renderAir(dt){
 
 /* ================= DOWNHILL RACE MODE ================= */
 const DHS=[
- {name:'Bunny Run',sub:'A friendly first descent',lvl:1,pv:1,len:1050,a0:13,av:3,ka:15,ramps:3,rocks:0.9,mog:0,pads:3,drag:1,pace:1.111,par:34.17,tags:['BEGINNER'],fav:'Everyone',seed:11,vn:30},
- {name:'Pine Rush',sub:'Rocks, logs and moguls',lvl:3,pv:0,len:1250,a0:15,av:4,ka:16,ramps:4,rocks:2.0,mog:1,pads:3,drag:1,pace:0.989,par:36.93,tags:['OBSTACLES','MOGULS'],fav:'Balance riders',seed:23,vn:33},
- {name:'Powder Chute',sub:'Steep drops and big kickers',lvl:6,pv:2,len:1300,a0:18,av:5,ka:19,ramps:5,rocks:1.3,mog:0,pads:3,drag:1,pace:1,par:37.37,tags:['STEEP','BIG KICKERS'],fav:'Speed boards',seed:37,vn:38},
- {name:'Glacier Express',sub:'Slick ice, huge speed',lvl:9,pv:2,pal:'crystal',len:1400,a0:13,av:3,ka:17,ramps:4,rocks:1.6,mog:0,pads:4,drag:0.74,pace:0.879,par:38.59,tags:['ICE','FAST'],fav:'Control riders',seed:41,vn:38},
- {name:'Avalanche Alley',sub:'Outrun the wall of snow',lvl:12,pv:5,len:1450,a0:16,av:4,ka:17,ramps:4,rocks:1.7,mog:1,pads:5,drag:1,pace:0.829,par:40.15,av0:15,avAcc:0.5,avGap:75,tags:['AVALANCHE'],fav:'Fast starters',seed:53,vn:35},
- {name:'Neon Dash',sub:'City lights and jump after jump',lvl:15,pv:4,len:1350,a0:15,av:3,ka:18,ramps:9,rocks:0.9,mog:0,pads:8,drag:1,pace:1,par:43.64,spinX:1.3,flipX:1.3,tags:['JUMP HEAVY','BOOST PADS','TRICKS x1.3'],fav:'Trick riders',seed:67,vn:34},
- {name:'Thunder Gorge',sub:'Headwind and a field of rocks',lvl:18,pv:5,len:1250,a0:17,av:4,ka:17,ramps:4,rocks:3.0,mog:2,pads:4,drag:1,wind:-2.6,pace:1.161,par:40.89,tags:['HEADWIND','ROCK FIELD'],fav:'Power pumpers',seed:79,vn:36},
- {name:'Summit to Sea',sub:'The longest, nastiest run',lvl:22,pv:1,pal:'golden',len:1700,a0:16,av:5,ka:18,ramps:8,rocks:2.2,mog:3,pads:7,drag:0.9,wind:-1.5,pace:1.272,par:57.12,tags:['EPIC LENGTH','ALL HAZARDS'],fav:'Everyone',seed:97,vn:36}
+ {name:'Bunny Run',sub:'A friendly first descent',lvl:1,pv:1,len:900,a0:13,av:3,ka:15,ramps:3,rocks:0.9,mog:0,pads:2,drag:1,pace:1.052,par:29.52,tags:['BEGINNER'],fav:'Everyone',plat:125000,seed:11,vn:30},
+ {name:'Pine Rush',sub:'Rocks, logs and moguls',lvl:3,pv:0,len:1700,a0:15,av:4,ka:16,ramps:6,rocks:2.0,mog:2,pads:4,drag:1,pace:1.007,par:49.7,tags:['OBSTACLES','MOGULS'],fav:'Balance riders',plat:140000,seed:23,vn:33},
+ {name:'Powder Chute',sub:'Steep drops and big kickers',lvl:6,pv:2,len:1000,a0:18,av:5,ka:19,ramps:4,rocks:1.3,mog:0,pads:3,drag:1,pace:1.036,par:30.27,tags:['STEEP','BIG KICKERS'],fav:'Speed boards',plat:135000,seed:37,vn:38},
+ {name:'Glacier Express',sub:'Slick ice, huge speed',lvl:9,pv:2,pal:'crystal',len:2300,a0:13,av:3,ka:17,ramps:7,rocks:1.6,mog:0,pads:5,drag:0.74,pace:1.059,par:65.24,tags:['ICE','FAST'],fav:'Control riders',plat:150000,seed:41,vn:38},
+ {name:'Avalanche Alley',sub:'Outrun the wall of snow',lvl:12,pv:5,len:2200,a0:16,av:4,ka:17,ramps:7,rocks:1.7,mog:2,pads:6,drag:1,pace:0.893,par:61.38,av0:15,avAcc:0.5,avGap:75,tags:['AVALANCHE'],fav:'Fast starters',plat:150000,seed:53,vn:35},
+ {name:'Neon Dash',sub:'City lights and jump after jump',lvl:15,pv:4,len:1200,a0:15,av:3,ka:18,ramps:8,rocks:0.9,mog:0,pads:7,drag:1,pace:0.905,par:37.71,spinX:1.3,flipX:1.3,tags:['JUMP HEAVY','BOOST PADS','TRICKS x1.3'],fav:'Trick riders',plat:150000,seed:67,vn:34},
+ {name:'Thunder Gorge',sub:'Headwind and a field of rocks',lvl:18,pv:5,len:2000,a0:17,av:4,ka:17,ramps:6,rocks:3.0,mog:3,pads:5,drag:1,wind:-2.6,pace:1.183,par:65.33,tags:['HEADWIND','ROCK FIELD'],fav:'Power pumpers',plat:150000,seed:79,vn:36},
+ {name:'Summit to Sea',sub:'The longest, nastiest run',lvl:22,pv:1,pal:'golden',len:2900,a0:16,av:5,ka:18,ramps:13,rocks:2.2,mog:5,pads:9,drag:0.9,wind:-1.5,pace:1.195,par:92.71,tags:['EPIC LENGTH','ALL HAZARDS'],fav:'Everyone',plat:180000,seed:97,vn:36}
 ];
 const dhUnlocked=i=>curLevel()>=DHS[i].lvl;
 const DH_DRAG=0.0065, KMH=3.4;
@@ -2260,22 +2301,38 @@ function trickNameFromKey(k){
 
 /* ---- screens ---- */
 function scrTitle(){
-  return '<div class="tscr" data-act="scr:main"><div class="tlogo"><div class="eyebrow">THE ULTIMATE SNOWBOARD FREESTYLE GAME</div><div class="l1"><span class="a">FROST</span><span class="b">LINE</span></div><div class="rule"></div><div class="tag">'+GAME_TAG+'</div><div class="chips2"><i>BIG AIR</i><i>HALF-PIPE</i><i>DOWNHILL</i></div></div><div class="tap">TAP TO START</div><div class="tfoot"><span>'+(SAVE.tot.runs?'LEVEL '+curLevel()+' &nbsp;&middot;&nbsp; '+fmt(SAVE.coins)+' COINS':'WELCOME, RIDER')+'</span><span>v1.0</span></div></div>';
+  return '<div class="tscr" data-act="scr:main"><div class="tlogo"><div class="eyebrow">THE ULTIMATE SNOWBOARD FREESTYLE GAME</div><div class="l1"><span class="a">FROST</span><span class="b">LINE</span></div><div class="rule"></div><div class="tag">'+GAME_TAG+'</div><div class="chips2"><i>BIG AIR</i><i>HALF-PIPE</i><i>DOWNHILL</i></div></div><div class="tap">TAP TO START</div><div class="tfoot"><span>'+(SAVE.tot.runs?'LEVEL '+curLevel()+' &nbsp;&middot;&nbsp; '+fmt(SAVE.coins)+' COINS':'WELCOME, RIDER')+'</span><span>v1.1</span></div></div>';
 }
 function scrMain(){
   const V=VENUES[SAVE.sel.venue], R=RIDERS[SAVE.sel.rider], B=BOARDS[SAVE.sel.board], dc=dailyConfig(), L=levelInfo(SAVE.xp);
   const ai=SAVE.sel.air, AC=AIRS[ai], dDone=SAVE.daily.last===dayNum(), m=SAVE.medals[SAVE.sel.venue], am=SAVE.medalsAir[ai];
   const goalsL=briefGoals.length;
   let h='<div class="hub"><div class="top"><div class="pl"><div class="plv">LV '+L.l+'</div><div><div class="lvbar" style="margin:0;width:120px"><i style="width:'+Math.round(L.x/L.need*100)+'%"></i></div><div class="meta"><span class="coin">'+fmt(SAVE.coins)+'</span> coins'+(SAVE.daily.streak>0?' &middot; '+SAVE.daily.streak+'-day streak':'')+'</div></div></div><div class="who">'+esc(R.name)+' &middot; '+esc(B.name)+'</div><button class="btn sm" data-act="scr:settings">SETTINGS</button></div>';
-  h+='<div class="modes"><div class="mode hero"><div class="mt">BIG AIR</div><div class="mv">'+esc(AC.name)+'</div><div class="tagrow">'+AC.tags.map(t=>'<i>'+esc(t)+'</i>').join('')+'</div><div class="meta">BEST '+fmt(SAVE.bestAir[ai])+' &middot; <span style="color:'+MEDAL_COL[am]+'">'+MEDAL_NAMES[am]+'</span></div><button class="big" data-act="air">SEND IT</button><div class="row"><button class="btn sm" data-act="vtab:air">COURSES</button></div></div>';
-  h+='<div class="mode on"><div class="mt">HALF-PIPE</div><div class="mv">'+esc(V.name)+'</div><div class="meta">BEST '+fmt(SAVE.best[SAVE.sel.venue])+' &middot; <span style="color:'+MEDAL_COL[m]+'">'+MEDAL_NAMES[m]+'</span></div><button class="big sm2" data-act="play">DROP IN</button><div class="row"><button class="btn sm" data-act="vtab:pipe">VENUES</button><button class="btn sm mg" data-act="daily">DAILY'+(dDone?' ✓':'')+'</button><button class="btn sm'+(SAVE.tutDone?'':' mg')+'" data-act="tut">TRAINING</button></div></div>';
   const di=SAVE.sel.dh, DC=DHS[di], dm=SAVE.medalsDh[di];
-  h+='<div class="mode dhm"><div class="mt">DOWNHILL</div><div class="mv">'+esc(DC.name)+'</div><div class="tagrow">'+DC.tags.slice(0,2).map(t=>'<i>'+esc(t)+'</i>').join('')+'</div><div class="meta">BEST '+fmt(SAVE.bestDh[di])+' &middot; <span style="color:'+MEDAL_COL[dm]+'">'+MEDAL_NAMES[dm]+'</span></div><button class="big sm2" data-act="dh">RACE</button><div class="row"><button class="btn sm" data-act="vtab:dh">COURSES</button></div></div></div>';
-  h+='<div class="nav"><button class="btn" data-act="scr:garage">GARAGE</button><button class="btn" data-act="scr:codex">TRICK BOOK</button><button class="btn" data-act="scr:profile">PROFILE</button></div></div>';
+  const card=(cls,title,name,tags,best,medal,cv,prim,pact,sec)=>'<div class="mode '+cls+'"><canvas class="mbg" data-k="'+cv[0]+'" data-i="'+cv[1]+'"></canvas><div class="mshade"></div><div class="mi"><div class="mhead"><div class="mt">'+title+'</div><div class="mv">'+esc(name)+'</div></div><div class="tagrow">'+tags.map(t=>'<i>'+esc(t)+'</i>').join('')+'</div><div class="meta">BEST '+fmt(best)+' &middot; <span style="color:'+MEDAL_COL[medal]+'">'+MEDAL_NAMES[medal]+'</span></div><button class="big" data-act="'+pact+'">'+prim+'</button><div class="row2">'+sec.map(x=>'<button class="btn sm" data-act="'+x[1]+'">'+x[0]+'</button>').join('')+'</div></div></div>';
+  h+='<div class="modes">'+
+    card('m-air','BIG AIR',AC.name,AC.tags.slice(0,2),SAVE.bestAir[ai],am,['air',ai],'SEND IT','air',[['COURSES','vtab:air'],['CONTROLS','how:air']])+
+    card('m-pipe','HALF-PIPE',V.name,['TRICK COMBOS','TIMED RUN'],SAVE.best[SAVE.sel.venue],m,['venue',SAVE.sel.venue],'DROP IN','play',[['VENUES','vtab:pipe'],['CONTROLS','how:pipe']])+
+    card('m-dh','DOWNHILL',DC.name,DC.tags.slice(0,2),SAVE.bestDh[di],dm,['dh',di],'RACE','dh',[['COURSES','vtab:dh'],['CONTROLS','how:dh']])+'</div>';
+  h+='<div class="nav"><button class="btn" data-act="scr:garage">GARAGE</button><button class="btn" data-act="scr:codex">TRICK BOOK</button><button class="btn mg" data-act="daily">DAILY'+(dDone?' ✓':'')+'</button><button class="btn'+(SAVE.tutDone?'':' mg')+'" data-act="tut">TRAINING</button><button class="btn" data-act="scr:profile">PROFILE</button></div></div>';
   return h;
 }
 function frame(title,body,back,right){
   return '<div class="frame"><div class="fh"><button class="btn sm" data-act="scr:'+(back||'main')+'">&lsaquo; BACK</button><h2>'+title+'</h2><div class="fr">'+(right===undefined?'<span class="coin">'+fmt(SAVE.coins)+'</span> coins':right)+'</div></div><div class="fb">'+body+'</div></div>';
+}
+
+let howTab='air', howGo=null;
+const HOW={
+ air:{t:'BIG AIR',steps:['<b>HOLD</b> the left side of the screen to build speed down the run-in.','<b>RELEASE</b> in the glowing band at the lip. Perfect timing = a bigger launch.','In the air, <b>DRAG</b> for spins and flips. <b>Hold INDY / MUTE / NOSE / TAIL</b> for grabs.','Get your board level and land on the slope. Clear the gap!','Collect gems to fill <b>UBER</b>, then tap it for a huge trick. You get 3 jumps per run.']},
+ pipe:{t:'HALF-PIPE',steps:['<b>HOLD</b> to pump up the wall and charge your pop.','<b>RELEASE</b> in the glowing band at the lip. Perfect pops build momentum.','In the air, <b>DRAG</b> for spins and flips. <b>Hold INDY / MUTE / NOSE / TAIL</b> for grabs.','Land clean to bank your combo. A bail loses it all.','Chain tricks before time runs out. Fill <b>UBER</b> with gems for a monster trick.']},
+ dh:{t:'DOWNHILL',steps:['At the start, <b>HOLD</b> just as the countdown ends for a <b>ROCKET START</b>.','<b>HOLD</b> to tuck and go faster. <b>RELEASE</b> to hop over rocks and logs.','In <b>MOGULS</b>, let go and stand up. Tucking there slows you down.','<b>RELEASE</b> in the glowing band at ramps to pop, then do tricks. A clean landing gives a speed <b>BOOST</b>.','Hit boost pads, beat the 5 rivals, and finish top 3 for a medal.']}
+};
+function scrHow(){
+  const H=HOW[howTab], tab=(k,n)=>'<button class="btn sm'+(howTab===k?' on':'')+'" data-act="how:'+k+'">'+n+'</button>';
+  let h='<div class="tabs">'+tab('air','BIG AIR')+tab('pipe','HALF-PIPE')+tab('dh','DOWNHILL')+'</div><div class="how"><div class="hphone"><div class="hz hl"><b>HOLD</b><span>press anywhere on the left</span><span>drag = spin / flip in the air</span></div><div class="hz hr"><div class="hgb"><i>INDY</i><i>MUTE</i><i>NOSE</i><i>TAIL</i></div><div class="hub2">UBER</div><span>grabs</span></div></div><ol class="hsteps">'+H.steps.map(x=>'<li>'+x+'</li>').join('')+'</ol></div>';
+  h+='<div class="hkeys"><b>KEYBOARD</b> &nbsp;SPACE = hold &middot; ARROWS / WASD = spin &amp; flip &middot; Z X C V = grabs &middot; E = Uber &middot; P = pause</div>';
+  if(howGo) h+='<div class="row" style="margin-top:10px"><button class="big" data-act="howgo">GOT IT &mdash; START</button></div>';
+  return frame('HOW TO PLAY',h,howGo?'main':(S&&S.mode==='paused'?'pause':'main'),howGo?'':undefined);
 }
 let garPv={rider:0,board:0}, garTab2='riders';
 const boardOrder=()=>BOARDS.map((b,i)=>i).sort((a,b)=>BOARDS[a].cost-BOARDS[b].cost);
@@ -2344,7 +2401,7 @@ function scrSettings(back){
   return frame('SETTINGS',body,back||'main',' ');
 }
 function scrPause(){
-  return '<h2>PAUSED</h2><div class="row"><button class="big" data-act="resume">RESUME</button></div><div class="row"><button class="btn" data-act="restart">RESTART</button><button class="btn" data-act="scr:psettings">SETTINGS</button><button class="btn" data-act="quit">QUIT TO MENU</button></div>';
+  return '<h2>PAUSED</h2><div class="row"><button class="big" data-act="resume">RESUME</button></div><div class="row"><button class="btn" data-act="restart">RESTART</button><button class="btn" data-act="howp">CONTROLS</button><button class="btn" data-act="scr:psettings">SETTINGS</button><button class="btn" data-act="quit">QUIT TO MENU</button></div>';
 }
 function scrOver(){
   const R=RES, st=R.st;
@@ -2362,7 +2419,7 @@ function scrOver(){
   h+='<div class="row"><button class="big" data-act="again">RUN AGAIN</button></div><div class="row"><button class="btn" data-act="share">SHARE SCORE</button><button class="btn" data-act="quit">MENU</button></div>';
   return h;
 }
-const SCREENS={title:scrTitle,main:scrMain,venues:scrVenues,garage:scrGarage,codex:scrCodex,profile:scrProfile,settings:()=>scrSettings('main'),psettings:()=>scrSettings('pause'),pause:scrPause,over:scrOver};
+const SCREENS={howto:scrHow,title:scrTitle,main:scrMain,venues:scrVenues,garage:scrGarage,codex:scrCodex,profile:scrProfile,settings:()=>scrSettings('main'),psettings:()=>scrSettings('pause'),pause:scrPause,over:scrOver};
 function showScr(name){
   if(!SAVE) return;
   const prev=curScr;
@@ -2371,7 +2428,7 @@ function showScr(name){
   const sc={fb:(q('.fb')||{}).scrollTop||0,gl:(q('.gl')||{}).scrollTop||0};
   curScr=name; if(name!=='settings'&&name!=='psettings') confirmReset=false;
   cardEl.innerHTML=SCREENS[name](); scrEl.classList.remove('hidden');
-  const full=(name==='title'||name==='main'), framed=['venues','garage','codex','profile','settings','psettings'].indexOf(name)>=0;
+  const full=(name==='title'||name==='main'), framed=['venues','garage','codex','profile','settings','psettings','howto'].indexOf(name)>=0;
   cardEl.className=(full||framed)?'full':'card'; scrEl.classList.toggle('plain',full); scrEl.classList.toggle('istitle',name==='title'); scrEl.classList.toggle('framed',framed);
   if(prev===name){ const f=q('.fb'),g=q('.gl'); if(f) f.scrollTop=sc.fb; if(g) g.scrollTop=sc.gl; }
   paintAll();
@@ -2402,12 +2459,16 @@ function togglePause(){
   else if(S.mode==='paused'){ S.mode='play'; hideScr(); acc=0; }
 }
 function quitToMenu(){ toMenuState(); setUIPlay(false); refreshGoals(); showScr('main'); }
+function firstTime(mode,go){ if(SAVE.seen[mode]) return false; SAVE.seen[mode]=1; persist(); howTab=mode; howGo=go; showScr('howto'); return true; }
 function act(a){
   const [k,v,w]=a.split(':');
   initAudio();
   switch(k){
-    case 'play': startPlay({},false); break;
-    case 'daily': startPlay({daily:true}); break;
+    case 'play': if(firstTime('pipe','play')) break; startPlay({},false); break;
+    case 'daily': if(firstTime('pipe','daily')) break; startPlay({daily:true}); break;
+    case 'howp': howTab=S.kind==='dh'?'dh':S.kind==='air'?'air':'pipe'; howGo=null; showScr('howto'); break;
+    case 'how': howTab=v; howGo=null; showScr('howto'); break;
+    case 'howgo': { const g=howGo; howGo=null; act(g); break; }
     case 'tut': startPlay({tut:true}); break;
     case 'again': if(RES&&RES.dh){ startDH(RES.vi); acc=0; } else if(RES&&RES.air){ startAir(RES.vi); acc=0; } else if(RES&&RES.daily) startPlay({daily:true}); else startPlay({},true); break;
     case 'scr': showScr(v); break;
@@ -2415,8 +2476,8 @@ function act(a){
     case 'restart': if(S.kind==='dh'){ const di=S.di; S.mode='over'; startDH(di); acc=0; break; } if(S.kind==='air'){ const ai=S.ai; S.mode='over'; startAir(ai); acc=0; break; } S.mode='over'; startPlay(S&&S.tut?{tut:true}:isDaily?{daily:true}:{},true); break;
     case 'quit': quitToMenu(); break;
     case 'venue': { const i=+v; if(venueUnlocked(i)){SAVE.sel.venue=i; persist(); toMenuState(); refreshGoals(); showScr('venues'); } else toast('LOCKED','Reach level '+VENUES[i].lvl+' to unlock'); break; }
-    case 'air': startAir(SAVE.sel.air); acc=0; break;
-    case 'dh': startDH(SAVE.sel.dh); acc=0; break;
+    case 'air': if(firstTime('air','air')) break; startAir(SAVE.sel.air); acc=0; break;
+    case 'dh': if(firstTime('dh','dh')) break; startDH(SAVE.sel.dh); acc=0; break;
     case 'dhsel': { const i=+v; if(dhUnlocked(i)){SAVE.sel.dh=i; persist(); showScr('venues');} else toast('LOCKED','Reach level '+DHS[i].lvl+' to unlock'); break; }
     case 'vtab': venTab=v; showScr('venues'); break;
     case 'airsel': { const i=+v; if(airUnlocked(i)){SAVE.sel.air=i; persist(); showScr('venues');} else toast('LOCKED','Reach level '+AIRS[i].lvl+' to unlock'); break; }
