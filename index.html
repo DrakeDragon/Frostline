@@ -479,7 +479,7 @@ function startRun(opts){
   if(isDaily){const dc=dailyConfig();setVenue(dc.venue);applyMod(dc.mod);rnd=mulberry32(dc.seed);}
   else {applyMod(null);rnd=Math.random;}
   recalcE();
-  GEO=null; AIRMOD={spin:1,flip:1,grab:1,hb:1}; S=newS('play');
+  GEO=null; AIRMOD={spin:1,flip:1,grab:1,hb:1}; S=newS('play'); camX=0; zoom=1; camB=-3.2;
   S.goals=opts.tut?[]:(isDaily?pickGoals(mulberry32(hashStr('goals'+dayNum()))):briefGoals.length?briefGoals:pickGoals(Math.random));
   if(opts.tut) S.tut={step:0,t:0,pumpT:0,popped:false,doneT:0};
   combo={pool:0,chain:0,timer:0};
@@ -1279,7 +1279,7 @@ function render(dt){
   if(S.kind==='dh'&&GEO){ renderDH(dt); return; }
   const V=VENUES[curVenue], P=V.pal, tt=performance.now()/1000;
   const zT=1-clamp((r.y-14)/70,0,0.16)+(slowT>0?0.1:0);
-  zoom+=(zT-zoom)*Math.min(1,dt*3); ppu=ppuBase*zoom;
+  camX=0; zoom+=(zT-zoom)*Math.min(1,dt*3); ppu=ppuBase*zoom;
   const visH=H/ppu;
   camB+=(clamp(r.y-visH*0.58,-3.2,40)-camB)*Math.min(1,dt*5);
   shake=Math.max(0,shake-dt*30);
